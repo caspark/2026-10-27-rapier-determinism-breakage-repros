@@ -2,6 +2,10 @@
 
 Small, standalone examples that break determinism in Rapier 0.36.1 with `enhanced-determinism` enabled. Each file contains its entire scene and prints one result as f32 hexadecimal bits.
 
+> ## Slop Warning
+> 
+> These breakages and the reproduction examples here were found by a coding agent - I have attempted to prune down to a minimal repro set and deslop somewhat, but obviously take the results with a grain of salt because I don't know the rapier/parry codebases.
+
 ## Run
 
 Rust with rustup is the only prerequisite. The toolchain file selects Rust 1.95.0 and the Wasm target. Cargo builds Wasmtime. No Wasmtime CLI, Node, or browser is needed.
